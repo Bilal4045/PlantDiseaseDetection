@@ -1,86 +1,103 @@
-Plant Disease Recognition System
+#  Plant Disease Recognition System
 
-An AI-powered web application built with Streamlit and TensorFlow that detects plant diseases from leaf images using a trained deep learning model.
+> AI-powered plant disease detection from leaf images using Deep Learning & Streamlit
 
- Features
- Detects 38 plant disease classes
- Fast real-time predictions
- Upload image and get instant results
- Simple and user-friendly interface
- Powered by CNN-based deep learning model
- How It Works
-Upload a plant leaf image
-Image is resized to 128×128 pixels
-Preprocessed using TensorFlow
-Model predicts disease class
-Result is displayed instantly
- Dataset Information
-Total Images: ~87,000
-Classes: 38 plant disease categories
-Split:
-Train: 70,295 images
-Validation: 17,572 images
-Test: 33 images
- Tech Stack
-Python 
-TensorFlow / Keras 
-Streamlit 
-NumPy 
-PIL (Pillow) 
-📂 Project Structure
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+---
+
+##  Features
+-  Detects **38 plant disease classes**
+-  Fast real-time predictions
+-  Upload any leaf image and get instant results
+-  Simple and user-friendly interface
+-  Powered by CNN-based deep learning model
+
+---
+
+##  How It Works
+1. Upload a plant leaf image
+2. Image is resized to 128×128 pixels
+3. Preprocessed and fed to the model
+4. Model predicts the disease class
+5. Result is displayed instantly
+
+---
+
+##  Dataset Information
+
+| Property | Details |
+|---|---|
+| Total Images | ~87,000 |
+| Classes | 38 disease categories |
+| Train Set | 70,295 images |
+| Validation Set | 17,572 images |
+| Test Set | 33 images |
+
+---
+
+##  Tech Stack
+- **Python**
+- **TensorFlow / Keras**
+- **Streamlit**
+- **NumPy**
+- **PIL (Pillow)**
+
+---
+
+## 📂 Project Structure
 Plant Disease Detection/
 │
-├── plant_disease_model.keras   # Trained model
-├── main.py                     # Streamlit app
-├── plant2.jpg                 # Home page image
-├── requirements.txt
-└── README.md
- Installation & Setup
-1. Clone Repository
-git clone https://github.com/your-username/PlantDiseaseDetection.git
+├── main.py                          # Streamlit app
+├── plant_disease_model.tflite       # Optimized model
+├── requirements.txt                 # Dependencies
+└── README.md                        # Documentation
+
+---
+
+## Installation & Setup
+
+**1. Clone Repository**
+```bash
+git clone https://github.com/Bilal4045/PlantDiseaseDetection.git
 cd PlantDiseaseDetection
-2. Install Dependencies
+```
+
+**2. Install Dependencies**
+```bash
 pip install -r requirements.txt
-3. Run Application
+```
+
+**3. Run Application**
+```bash
 streamlit run main.py
- Usage
-Home Page
-Overview of system
-About Page
-Dataset details
-Disease Recognition Page
-Upload a leaf image
-Click Predict
-Get disease result instantly
- Model Classes (38)
+```
 
-The model can detect diseases across Apple, Tomato, Corn, Potato, Grapes, etc.
+---
 
-Example:
+## Supported Disease Classes (38)
+The model detects diseases across Apple, Tomato, Corn, Potato, Grape and more.
 
-Apple___Apple_scab
-Tomato___Late_blight
-Potato___Early_blight
-Corn_(maize)__Common_rust
-...and more
- Important Notes
-Model file plant_disease_model.keras must be in the root directory
-Input image is automatically resized to 128x128
-Ensure good quality leaf images for better accuracy
- Author
+| Crop | Example Disease |
+|---|---|
+| Apple | Apple Scab, Black Rot, Cedar Apple Rust |
+| Tomato | Early Blight, Late Blight, Leaf Mold |
+| Potato | Early Blight, Late Blight |
+| Corn | Common Rust, Northern Leaf Blight |
+| Grape | Black Rot, Esca, Leaf Blight |
 
-Bilal Mehmood
-AI / Machine Learning Developer
+---
 
-⭐ Future Improvements
-Add confidence percentage
-Deploy on cloud (Streamlit Cloud / HuggingFace)
-Improve model accuracy with transfer learning
-Add mobile-friendly UI
+## 🔮 Future Improvements
+- Improve model accuracy with transfer learning
+- Add treatment recommendations for each disease
+- Mobile-friendly UI
+- REST API for third-party integration
 
-If you want, I can also:
-✔ make a requirements.txt
-✔ optimize your model loading (right now it reloads every prediction)
-✔ help you deploy it online free (Streamlit Cloud / HuggingFace Spaces)
+---
 
-Just tell me 👍
+## 👨‍💻 Author
+**Bilal Mehmood** — AI / Machine Learning Developer
+- GitHub: [@Bilal4045](https://github.com/Bilal4045)
