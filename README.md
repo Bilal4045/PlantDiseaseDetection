@@ -1,13 +1,12 @@
-#  Plant Disease Recognition System
-
+##  Plant Disease Recognition System
 > AI-powered plant disease detection from leaf images using Deep Learning & Streamlit
 
-Python
-TensorFlow
-Streamlit
-opencv
----
+-  Python
+-  TensorFlow
+-  Streamlit
+-  Opencv
 
+---
 ##  Features
 -  Detects **38 plant disease classes**
 -  Fast real-time predictions
