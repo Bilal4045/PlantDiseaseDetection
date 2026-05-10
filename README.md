@@ -53,7 +53,8 @@
 Plant Disease Detection/
 │
 ├── main.py                          # Streamlit app
-├── plant_disease_model.tflite       # Optimized model
+├── Plant_Disease_Test.ipynb         # Training Notebook
+|── Plant_Disease_Train.ipynb        # Testing Notebook
 ├── requirements.txt                 # Dependencies
 └── README.md                        # Documentation
 ```
