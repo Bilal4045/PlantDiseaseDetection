@@ -1,0 +1,48 @@
+# Large model files
+*.keras
+*.h5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Dataset/zip files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Large image datasets
+*.jpg
+*.jpeg
+*.png
+*.JPG
+*.JPEG
+*.PNG
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+
