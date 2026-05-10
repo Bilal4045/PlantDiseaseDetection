@@ -2,10 +2,10 @@
 
 > AI-powered plant disease detection from leaf images using Deep Learning & Streamlit
 
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
+Python
+TensorFlow
+Streamlit
+opencv
 ---
 
 ##  Features
