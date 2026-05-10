@@ -48,14 +48,15 @@
 ---
 
 ## 📂 Project Structure
+
+```
 Plant Disease Detection/
 │
 ├── main.py                          # Streamlit app
 ├── plant_disease_model.tflite       # Optimized model
 ├── requirements.txt                 # Dependencies
 └── README.md                        # Documentation
-
----
+```
 
 ## Installation & Setup
 
