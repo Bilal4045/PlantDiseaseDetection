@@ -91,7 +91,7 @@ The model detects diseases across Apple, Tomato, Corn, Potato, Grape and more.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 - Improve model accuracy with transfer learning
 - Add treatment recommendations for each disease
 - Mobile-friendly UI
@@ -99,6 +99,6 @@ The model detects diseases across Apple, Tomato, Corn, Potato, Grape and more.
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Bilal Mehmood** — AI / Machine Learning Developer
 - GitHub: [@Bilal4045](https://github.com/Bilal4045)
