@@ -3,5 +3,5 @@ uvicorn
 python-multipart
 numpy
 pillow
-tensorflow
-gradio
+tensorflow-cpu
+huggingface_hub
