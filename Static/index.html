@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4ed">
+  <title>Fieldnote | Plant health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Fieldnote home">
+      <span class="brand-mark" aria-hidden="true">f.</span>
+      <span>fieldnote<span class="brand-period">.</span></span>
+    </a>
+    <div class="topbar-status"><span class="status-dot"></span> MODEL ONLINE</div>
+  </header>
+
+  <main class="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span>FIELD TOOL</span><span class="eyebrow-rule"></span><span>01 / DIAGNOSIS</span></div>
+      <h1 id="page-title">Read the signs<br>on your <em>leaves.</em></h1>
+      <p class="intro-copy">A quick visual check for common crop diseases. Add a clear leaf photo to get started.</p>
+      <div class="supported"><span class="supported-icon">38</span><span>conditions recognized<br><strong>14 plant varieties</strong></span></div>
+    </section>
+
+    <section class="workbench" aria-label="Plant disease image analysis">
+      <div class="section-heading">
+        <div><span class="step-label">01</span><h2>Upload a leaf sample</h2></div>
+        <span class="file-note">JPG OR PNG · MAX 10 MB</span>
+      </div>
+
+      <form id="upload-form">
+        <input id="file-input" type="file" accept="image/jpeg,image/png" hidden>
+        <button class="dropzone" id="dropzone" type="button" aria-label="Choose a leaf image or drop it here">
+          <span class="dropzone-content" id="dropzone-content">
+            <span class="upload-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15v4h14v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="drop-title">Drop your image here</span>
+            <span class="drop-subtitle">or <span class="browse-link">browse files</span></span>
+          </span>
+          <img id="image-preview" class="image-preview" alt="Selected leaf image preview" hidden>
+          <span id="replace-hint" class="replace-hint" hidden>Choose a different image</span>
+        </button>
+        <div class="form-footer">
+          <p class="privacy-note"><span aria-hidden="true">↗</span> Images are sent to this app for analysis.</p>
+          <button id="analyze-button" class="analyze-button" type="submit" disabled>
+            <span>Analyze leaf</span>
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+
+      <section id="result" class="result" aria-live="polite" hidden>
+        <div class="result-topline"><span class="step-label">02</span><span class="result-kicker">ANALYSIS COMPLETE</span></div>
+        <div class="result-body">
+          <div class="result-symbol" aria-hidden="true">✳</div>
+          <div class="result-copy"><span class="result-label">DETECTED CONDITION</span><h3 id="condition-name"></h3><p id="plant-name"></p></div>
+          <div class="confidence"><strong id="confidence-value">--%</strong><span>CONFIDENCE</span></div>
+        </div>
+        <div class="confidence-track"><span id="confidence-bar"></span></div>
+        <p class="disclaimer">This is an AI-assisted result, not a substitute for expert agricultural advice.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="page-footer"><span>FIELDNOTE / PLANT HEALTH</span><span>GROW WITH ATTENTION.</span></footer>
+</body>
+</html>
