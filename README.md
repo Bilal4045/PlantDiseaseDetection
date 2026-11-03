@@ -1,104 +1,45 @@
-##  Plant Disease Recognition System
-> AI-powered plant disease detection from leaf images using Deep Learning & Streamlit
 
--  Python
--  TensorFlow
--  Streamlit
--  Opencv
 
 ---
-##  Features
--  Detects **38 plant disease classes**
--  Fast real-time predictions
--  Upload any leaf image and get instant results
--  Simple and user-friendly interface
--  Powered by CNN-based deep learning model
-
+title: PlantDiseaseDetection
+emoji: 🌿
+colorFrom: green
+colorTo: yellow
+sdk: gradio
+sdk_version: 6.31.0
+python_version: "3.12"
+app_file: app.py
+pinned: false
 ---
 
-##  How It Works
-1. Upload a plant leaf image
-2. Image is resized to 128×128 pixels
-3. Preprocessed and fed to the model
-4. Model predicts the disease class
-5. Result is displayed instantly
+# Plant Disease Recognition System
 
----
+AI-powered plant disease detection from leaf images using Deep Learning.
 
-##  Dataset Information
+## Features
+- Detects 38 plant disease classes
+- Fast predictions
+- Upload leaf images and get predictions
+- CNN-based deep learning model
 
-| Property | Details |
-|---|---|
-| Total Images | ~87,000 |
-| Classes | 38 disease categories |
-| Train Set | 70,295 images |
-| Validation Set | 17,572 images |
-| Test Set | 33 images |
+## How It Works
+1. Upload a plant leaf image.
+2. Image is resized to 128×128 pixels.
+3. Image is preprocessed.
+4. Model predicts the disease class.
+5. Result is displayed.
 
----
+## Tech Stack
+- Python
+- TensorFlow / Keras
+- Gradio
+- NumPy
+- Pillow
 
-##  Tech Stack
-- **Python**
-- **TensorFlow / Keras**
-- **Streamlit**
-- **NumPy**
-- **PIL (Pillow)**
-
----
-
-## 📂 Project Structure
-
-```
-Plant Disease Detection/
-│
-├── main.py                          # Streamlit app
-├── Plant_Disease_Test.ipynb         # Training Notebook
-|── Plant_Disease_Train.ipynb        # Testing Notebook
-├── requirements.txt                 # Dependencies
-└── README.md                        # Documentation
-```
-
-## Installation & Setup
-
-**1. Clone Repository**
-```bash
-git clone https://github.com/Bilal4045/PlantDiseaseDetection.git
-cd PlantDiseaseDetection
-```
-
-**2. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-**3. Run Application**
-```bash
-streamlit run main.py
-```
-
----
-
-## Supported Disease Classes (38)
-The model detects diseases across Apple, Tomato, Corn, Potato, Grape and more.
-
-| Crop | Example Disease |
-|---|---|
-| Apple | Apple Scab, Black Rot, Cedar Apple Rust |
-| Tomato | Early Blight, Late Blight, Leaf Mold |
-| Potato | Early Blight, Late Blight |
-| Corn | Common Rust, Northern Leaf Blight |
-| Grape | Black Rot, Esca, Leaf Blight |
-
----
-
-## Future Improvements
-- Improve model accuracy with transfer learning
-- Add treatment recommendations for each disease
-- Mobile-friendly UI
-- REST API for third-party integration
-
----
+## Supported Crops
+Apple, Tomato, Corn, Potato, Grape and more.
 
 ## Author
-**Bilal Mehmood** — AI / Machine Learning Developer
-- GitHub: [@Bilal4045](https://github.com/Bilal4045)
+**Bilal Mehmood**
+
+GitHub: https://github.com/Bilal4045
