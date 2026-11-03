@@ -1,6 +1,6 @@
 import io
 import os
-
+from huggingface_hub import hf_hub_download
 import numpy as np
 import tensorflow as tf
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -10,7 +10,11 @@ from PIL import Image
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_DIR = os.path.join(BASE_DIR, "Static")
-MODEL_PATH = os.path.join(BASE_DIR, "plant_disease_model.keras")
+MODEL_PATH = hf_hub_download(
+    repo_id="Bilal4045/plant-disease-model",
+    filename="plant_disease_model.keras",
+    repo_type="model"
+)
 
 CLASS_NAMES = [
     "Apple___Apple_scab",
